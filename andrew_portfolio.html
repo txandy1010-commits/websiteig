@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew | Graphic Designer & 3D Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#0a0d14',
+                            card: '#121722',
+                            border: '#1e293b',
+                            cyan: '#00f0ff',
+                            purple: '#7000ff',
+                            text: '#94a3b8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0a0d14;
+            color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-cyan {
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.25);
+        }
+        .glow-cyan-lg {
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+        }
+        .cyber-grid {
+            background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="cyber-grid min-h-screen text-slate-200 antialiased selection:bg-cyan-500 selection:text-black">
+
+    <header class="fixed top-0 left-0 right-0 z-40 bg-cyber-bg/80 backdrop-blur-md border-b border-cyber-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 rounded bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center font-mono font-bold text-black group-hover:scale-105 transition-transform">
+                    A
+                </div>
+                <span class="font-mono text-lg font-bold tracking-wider text-white group-hover:text-cyan-400 transition-colors">
+                    ANDREW<span class="text-cyan-400">.DESIGN</span>
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-mono text-sm">
+                <a href="#about" class="text-slate-400 hover:text-cyan-400 transition-colors">// ABOUT</a>
+                <a href="#projects" class="text-slate-400 hover:text-cyan-400 transition-colors">// PORTFOLIO</a>
+                <a href="#skills" class="text-slate-400 hover:text-cyan-400 transition-colors">// TECH_STACK</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-mono bg-cyan-950 text-cyan-400 border border-cyan-800">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping mr-2"></span> LHS ROBOTICS
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-900 border border-slate-800 font-mono text-xs text-cyan-400">
+                    <i class="fa-solid fa-code-branch"></i> 10TH GRADE GRAPHIC DESIGNER & ROBOTICS ENGINEER
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Fusing <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 text-glow">Precision Robotics</span> & Graphic Design.
+                </h1>
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+                    Combining mechanical CAD logic, additive manufacturing expertise, and sleek high-impact visual design for brand systems, photography, and futuristic visual assets.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2 font-mono text-sm">
+                    <a href="#projects" class="px-6 py-3 rounded bg-cyan-500 hover:bg-cyan-400 text-black font-bold transition-all glow-cyan flex items-center gap-2">
+                        <i class="fa-solid fa-layer-group"></i> VIEW WORK
+                    </a>
+                    <a href="#about" class="px-6 py-3 rounded bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-user-astronaut"></i> ABOUT ME
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="relative rounded-2xl bg-cyber-card border border-cyber-border p-6 shadow-2xl overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+                        <span class="font-mono text-xs text-cyan-400">// LHS_BOT_TEAM_MEMBER</span>
+                        <div class="flex gap-1.5">
+                            <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-4 font-mono text-xs sm:text-sm">
+                        <div class="bg-slate-950 p-3 rounded border border-slate-800/80">
+                            <span class="text-slate-500">$ status --focus</span>
+                            <p class="text-cyan-300 font-semibold mt-1">> 3D Design, Prototyping & Visual Brand Media</p>
+                        </div>
+                        <div class="bg-slate-950 p-3 rounded border border-slate-800/80">
+                            <span class="text-slate-500">$ active_specs</span>
+                            <div class="grid grid-cols-2 gap-2 mt-1 text-slate-300">
+                                <div>• CAD Modeling</div>
+                                <div>• Brand Visuals</div>
+                                <div>• 3D Printing</div>
+                                <div>• Live Media</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-slate-950/60 border-y border-cyber-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4">
+                <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">// ABOUT ANDREW</span>
+                <h2 class="text-3xl font-extrabold text-white">Engineering Visual Identity & 3D Reality</h2>
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed pt-2">
+                    I am a 10th-grade graphic designer and active engineering member on the LHS Robotics Team. Driven by a passion for technical precision and creative expression, my work spans digital design, CAD modeling, additive manufacturing, and live event media production. By combining structured engineering logic with clean graphic aesthetics, I produce high-impact brand identities, promotional assets, and functional 3D designs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+            <div>
+                <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">// PORTFOLIO</span>
+                <h2 class="text-3xl font-extrabold text-white mt-1">Featured Projects</h2>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap gap-2 font-mono text-xs">
+                <button onclick="filterCategory('all')" class="filter-btn active px-4 py-2 rounded bg-cyan-500 text-black font-bold transition-all" data-cat="all">ALL</button>
+                <button onclick="filterCategory('posters')" class="filter-btn px-4 py-2 rounded bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500 transition-all" data-cat="posters">POSTERS</button>
+                <button onclick="filterCategory('brand')" class="filter-btn px-4 py-2 rounded bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500 transition-all" data-cat="brand">BRAND & LOGOS</button>
+                <button onclick="filterCategory('band')" class="filter-btn px-4 py-2 rounded bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500 transition-all" data-cat="band">LIVE MEDIA</button>
+                <button onclick="filterCategory('product')" class="filter-btn px-4 py-2 rounded bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500 transition-all" data-cat="product">CAMPAIGNS</button>
+            </div>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+
+            <!-- Movie Posters -->
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="posters">
+                <div class="relative aspect-[3/4] overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('lockinmovieposter.png', 'Lock In Movie Poster', 'Key artwork design for Lock In film concept.')">
+                    <img src="lockinmovieposter.png" alt="Lock In Poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/1e293b/00f0ff?text=Lock+In+Movie+Poster'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-cyan-400">POSTERS</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Lock In Poster</h3>
+                    <p class="text-xs text-slate-400 mt-1">Cinematic poster graphic layout and thematic typography.</p>
+                </div>
+            </div>
+
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="posters">
+                <div class="relative aspect-[3/4] overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('Movie Poster.jpg', 'Killer Virus Protocol Poster', 'High-tension movie poster concept design.')">
+                    <img src="Movie Poster.jpg" alt="Killer Virus Protocol Poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/1e293b/00f0ff?text=Killer+Virus+Protocol'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-cyan-400">POSTERS</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Killer Virus Protocol Poster</h3>
+                    <p class="text-xs text-slate-400 mt-1">Dramatic thriller theme featuring technical photo editing.</p>
+                </div>
+            </div>
+
+            <!-- Brand & Logo -->
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="brand">
+                <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('Logos-1.jpg', 'Angry Squirrel Coffee Logo Variant 1', 'Vector identity concept for specialty coffee brand.')">
+                    <img src="Logos-1.jpg" alt="Angry Squirrel Coffee Logo Variant 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/1e293b/00f0ff?text=Angry+Squirrel+Logo+V1'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-purple-400">BRANDING</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Angry Squirrel Logo V1</h3>
+                    <p class="text-xs text-slate-400 mt-1">Vector mascot and custom typography variant.</p>
+                </div>
+            </div>
+
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="brand">
+                <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('Logos-2.jpg', 'Angry Squirrel Coffee Emblem Variant 2', 'Circular badge design version.')">
+                    <img src="Logos-2.jpg" alt="Angry Squirrel Coffee Emblem Variant 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/1e293b/00f0ff?text=Angry+Squirrel+Emblem+V2'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-purple-400">BRANDING</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Angry Squirrel Emblem V2</h3>
+                    <p class="text-xs text-slate-400 mt-1">Circular badge icon optimized for apparel and merchandise.</p>
+                </div>
+            </div>
+
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="brand">
+                <div class="relative aspect-[3/4] overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('Poster.jpg', 'Angry Squirrel Coffee Promo Poster', 'Seasonal promotional poster design.')">
+                    <img src="Poster.jpg" alt="Angry Squirrel Coffee Seasonal Promo Poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/1e293b/00f0ff?text=Angry+Squirrel+Promo+Poster'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-purple-400">BRANDING</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Angry Squirrel Seasonal Promo</h3>
+                    <p class="text-xs text-slate-400 mt-1">Full-page commercial advertisement poster design.</p>
+                </div>
+            </div>
+
+            <!-- Band Photography -->
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="band">
+                <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('NicoVane1.png', 'Nico Vane & Static Frequency Live Close-Up', 'Live performance shot with custom color grading.')">
+                    <img src="NicoVane1.png" alt="Nico Vane Close-Up" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/1e293b/00f0ff?text=Nico+Vane+Live+Close-Up'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-emerald-400">LIVE MEDIA</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Nico Vane Live Close-Up</h3>
+                    <p class="text-xs text-slate-400 mt-1">Dynamic lighting capture & stage performance media.</p>
+                </div>
+            </div>
+
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="band">
+                <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('NicoVane2.png', 'Nico Vane Exterior Station Shot', 'Location photo featuring high contrast tone mapping.')">
+                    <img src="NicoVane2.png" alt="Nico Vane Station Shot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/1e293b/00f0ff?text=Nico+Vane+Exterior+Shot'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-emerald-400">LIVE MEDIA</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Nico Vane Exterior Shot</h3>
+                    <p class="text-xs text-slate-400 mt-1">Location environmental photography and tone editing.</p>
+                </div>
+            </div>
+
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="band">
+                <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('NicoVane3.png', 'Nico Vane Stage Performance', 'Wide stage action shot during concert event.')">
+                    <img src="NicoVane3.png" alt="Nico Vane Stage Performance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/1e293b/00f0ff?text=Nico+Vane+Stage+Performance'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-emerald-400">LIVE MEDIA</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Nico Vane Stage Performance</h3>
+                    <p class="text-xs text-slate-400 mt-1">Concert imagery capturing energy and atmosphere.</p>
+                </div>
+            </div>
+
+            <!-- Product & Ad Design -->
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="product">
+                <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('relaxWithStideX.jpg', 'Stride X Lifestyle Campaign', 'Commercial advertisement for Stride X product line.')">
+                    <img src="relaxWithStideX.jpg" alt="Stride X Lifestyle Campaign" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/1e293b/00f0ff?text=Stride+X+Lifestyle'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-amber-400">CAMPAIGNS</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Stride X Lifestyle Campaign</h3>
+                    <p class="text-xs text-slate-400 mt-1">Modern promotional ad layout and brand messaging.</p>
+                </div>
+            </div>
+
+            <div class="project-card group bg-cyber-card border border-cyber-border rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all" data-category="product">
+                <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightbox('SuccedewithStrideX.jpg', 'Stride X Sports Banner', 'High-impact performance marketing asset.')">
+                    <img src="SuccedewithStrideX.jpg" alt="Stride X Performance Banner" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/1e293b/00f0ff?text=Stride+X+Sports+Banner'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                </div>
+                <div class="p-5">
+                    <span class="font-mono text-xs text-amber-400">CAMPAIGNS</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Stride X Performance Banner</h3>
+                    <p class="text-xs text-slate-400 mt-1">Action-driven ad concept targeting athletic performance.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-slate-950/80 border-t border-cyber-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">// TECH_CAPABILITIES</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1 mb-10">Skills & Tooling</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-cyber-card p-6 rounded-xl border border-cyber-border">
+                    <div class="text-cyan-400 text-2xl mb-3"><i class="fa-solid fa-cube"></i></div>
+                    <h3 class="text-lg font-bold text-white mb-2">3D & Additive Tech</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">CAD parametric modeling, 3D printing optimization, spatial design, and digital rapid prototyping.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-[10px]">
+                        <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">CAD</span>
+                        <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">3D PRINTING</span>
+                        <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">3D MODELING</span>
+                    </div>
+                </div>
+
+                <div class="bg-cyber-card p-6 rounded-xl border border-cyber-border">
+                    <div class="text-purple-400 text-2xl mb-3"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3 class="text-lg font-bold text-white mb-2">Graphic & Brand Systems</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Vector identity creation, promotional typography, layout composition, and marketing graphics.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-[10px]">
+                        <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">LOGOS</span>
+                        <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">POSTERS</span>
+                        <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">TYPOGRAPHY</span>
+                    </div>
+                </div>
+
+                <div class="bg-cyber-card p-6 rounded-xl border border-cyber-border">
+                    <div class="text-emerald-400 text-2xl mb-3"><i class="fa-solid fa-robot"></i></div>
+                    <h3 class="text-lg font-bold text-white mb-2">Robotics & Engineering</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Active member of LHS Robotics team applying technical problem-solving to design projects.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-[10px]">
+                        <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">LHS ROBOTICS</span>
+                        <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">MECHANICAL CAD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full bg-cyber-card border border-cyber-border rounded-xl overflow-hidden shadow-2xl">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-slate-900/80 text-white hover:text-cyan-400 flex items-center justify-center font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="max-h-[75vh] bg-black flex items-center justify-center p-2">
+                <img id="lightbox-img" src="" alt="Expanded View" class="max-h-[70vh] object-contain">
+            </div>
+            <div class="p-6 bg-slate-950">
+                <h3 id="lightbox-title" class="text-xl font-bold text-white"></h3>
+                <p id="lightbox-desc" class="text-sm text-slate-400 mt-2"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-8 border-t border-cyber-border text-center text-xs font-mono text-slate-500">
+        <p>© 2026 ANDREW DESIGN & ENGINEERING. LHS ROBOTICS TEAM MEMBER.</p>
+    </footer>
+
+    <script>
+        // Category Filter Logic
+        function filterCategory(category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.project-card');
+
+            buttons.forEach(btn => {
+                if(btn.dataset.cat === category) {
+                    btn.classList.add('bg-cyan-500', 'text-black', 'font-bold');
+                    btn.classList.remove('bg-slate-900', 'text-slate-300');
+                } else {
+                    btn.classList.remove('bg-cyan-500', 'text-black', 'font-bold');
+                    btn.classList.add('bg-slate-900', 'text-slate-300');
+                }
+            });
+
+            cards.forEach(card => {
+                if(category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightbox / Image Viewer Functions
+        function openLightbox(src, title, desc) {
+            const lightbox = document.getElementById('lightbox');
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-desc').textContent = desc;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close Lightbox on Esc Key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
